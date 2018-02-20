@@ -3,4 +3,3 @@
 
 # Сайт в разработке... 
 
-<p>Для Просмотра перейти по ссылке <a href="https://vadimrocket.github.io/portfolio-site/">the site</a></p>
