@@ -1,0 +1,134 @@
+.navmenu {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	position: relative;
+	background: none;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: space-around;	
+	height: 79px;
+	width: 100%;
+}
+.navmenu__title  {
+  position: relative;
+}
+.navmenu__title:after {
+  content: "";
+  position: absolute; top: 0; left: 1em;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to left, rgba(255,255,255,.0), rgba(255,255,255,.8), rgba(255,255,255,.0)) no-repeat -2em 0%;
+  background-size: 2em 100%;
+  transform: skewX(-50deg);
+}
+
+.navmenu__title:hover:after {
+  transition: .4s linear;
+  background-position: 100% 0%;
+}
+
+.navmenu__title,
+.navmenu__list {
+	padding: 20px;
+}
+
+.navmenu__list {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+}
+.navmenu__link {
+	color: #000;
+	cursor: pointer;
+	margin: 10px;
+	padding: 5px;
+	text-decoration: none;
+	position: relative;
+}
+
+.navmenu__link.active {
+	color: rgb(3, 125, 176);
+}
+.navmenu__link:before {
+	background-color: rgb(3, 125, 176);
+	content: "";
+	position: absolute;
+	height: 1.4px;
+	width: 19%;
+	left: -14px;
+	bottom: 12px;
+	visibility: hidden;
+	transition:  all 0.3s ease-in-out 0s;
+	transform: scale(1);
+}
+
+.navmenu__link:hover:before {
+	visibility: visible;
+	transform: scale(1);
+	background-color: #999;
+}
+
+.navmenu__link.active:before {
+	visibility: visible;
+	transform: scale(1);
+	background-color: rgb(3, 125, 176);
+}
+
+.hamburger {
+	display: none;
+	border: none;
+	background: #fff;
+	-webkit-background-size: contain;
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 30px;
+	width: 30px;
+	padding: 5px;
+	margin-right: 20px;
+	z-index: 101;
+}
+
+@media (max-width: 655px) {
+	.hamburger {display: block;}
+
+	.navmenu__list {
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+		justify-content: space-between;
+		background-color: #fff;
+		padding: 0;
+		position: absolute;
+		top: 45px;
+		right: 0px;
+		z-index: 100;
+		margin: 12px 0;
+
+
+	}
+
+	.navmenu__list li {
+		margin: 10px 0;
+	}
+	.navmenu__list li a {
+		margin: 1px 0;
+        padding: 10px 43px;
+	}
+	.navmenu__link:before {
+		width: 10%;
+        left: 19px;
+        bottom: 17px
+	}
+	.navmenu__list.hide {display: none;}
+	.navmenu__link {width: 100%;}
+	.navmenu__title, .navmenu__list {padding: 10px;}
+
+}

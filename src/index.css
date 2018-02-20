@@ -1,0 +1,45 @@
+/*Global Selectors*/
+* {
+  box-sizing: border-box;
+}
+
+html, body, input, h1, h2, h3, p, table, ul, li {
+  margin: 0;
+  padding: 0;
+  color: rgb(100, 100, 100);
+}
+
+body {
+  font-family: sans-serif;
+  color: #303030;
+}
+
+*:focus {
+  outline: none;
+}
+
+ul { list-style-type: none;}
+
+a { text-decoration: none; color: inherit;}
+
+a:visited { text-decoration: none; color: inherit; }
+
+.tab {
+  transition: all 1s ease;
+  animation-name: tab;
+  animation-duration: 1s;
+}
+
+@keyframes tab {
+  0% {
+    transform: translateX(-250%);
+  }
+
+  70% {
+    transform: translateX(10%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
