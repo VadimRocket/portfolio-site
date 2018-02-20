@@ -6,7 +6,7 @@ const Home = () => {
     <div className="home tab">
       <img
         className="personal-photo"
-        src="./assets/nophoto.gif"
+        src="./assets/myphoto.jpg"
         alt="Vadim Martin"
       />
       

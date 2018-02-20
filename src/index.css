@@ -28,6 +28,9 @@ a:visited { text-decoration: none; color: inherit; }
   transition: all 1s ease;
   animation-name: tab;
   animation-duration: 1s;
+  max-width: 90.5%;
+  padding-bottom: 20px;
+
 }
 
 @keyframes tab {
