@@ -1,0 +1,62 @@
+.about {
+	height: calc(100vh -80px);
+	margin: 0 auto;
+	padding: 42px;
+	width: 72%;
+}
+
+.title {
+	position: relative;
+	line-height: 1em;
+	margin: 20px 0;
+}
+.title:after {
+	content: "";
+	position: absolute;
+	border-bottom: 2px solid #4d4c59;
+	width: 100px;
+	height: 1px;
+	bottom: -2px;
+	left: 0;
+}
+
+.paragraph {
+  margin-bottom: 10px;
+  line-height: 1.6em;
+}
+
+
+@media (max-width: 800px) {
+  .about {
+    width: 100%;
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 650px) {
+  .about__header {
+    flex-direction: column;
+  }
+
+  .about__name-box {
+    border-left: none;
+    border-top: 1px solid rgb(100, 100, 100);
+    margin: 20px 0 0 0;
+    padding: 10px 0 0 0;
+    text-align: center;
+  }
+
+  .job-title {
+    padding: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .name {
+    font-size: 36px;
+  }
+
+  .job-title {
+    font-size: 18px;
+  }
+}
