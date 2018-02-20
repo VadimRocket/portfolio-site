@@ -17,7 +17,7 @@ class NavBar extends Component {
 
 	render() {
 		const dropdown = this.state.showDropDown ? '' : ' hide';
-		const hamburger = { backgroundImage: 'url(./assets/hamburger.png)'}; 		
+		const hamburger = { backgroundImage: 'url(/assets/hamburger.png)'}; 		
 		
 		return (
 			<nav className="navmenu">
