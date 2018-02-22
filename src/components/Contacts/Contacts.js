@@ -26,6 +26,7 @@ class Contacts extends Component {
     render() {
        
         const {name, email, subject, message}  = this.state;
+
         return(
             <div className="contact tab">
                 <h1 className="contact__title">Связаться</h1>
@@ -63,6 +64,7 @@ class Contacts extends Component {
                     id="message"
                     placeholder="Сообщение"
                     value={message}
+                    onChange={e => this.handleChange(e)}
                    />
                    <input
                     className="contact__submit"
