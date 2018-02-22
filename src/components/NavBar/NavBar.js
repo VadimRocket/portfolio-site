@@ -40,7 +40,7 @@ class NavBar extends Component {
 					</li>
 					<li>
 						<NavLink activeClassName="active"
-						 className="navmenu__link" to={`${process.env.PUBLIC_URL}/contact`}>
+						 className="navmenu__link" to={`${process.env.PUBLIC_URL}/contacts`}>
 						 	Контакты
 						</NavLink>
 					</li>
